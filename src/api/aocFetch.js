@@ -8,7 +8,7 @@
 
 const APIURL =  "https://adventofcode.com";
 
-const aocFetch = async () => {
+export const aocFetch = async () => {
     const results = await fetch(`${APIURL}"/2022/leaderboard/private/view/2254107.json"`, {
         headers: {
             "session": "SESSION_ID",
@@ -17,6 +17,3 @@ const aocFetch = async () => {
     return results.json();
 }
 
-const getMockData = async () => {
-    fetch('../testData/2254107.json')
-}
