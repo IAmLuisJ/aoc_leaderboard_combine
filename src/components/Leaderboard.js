@@ -12,7 +12,8 @@ const Leaderboard = () => {
     // console.log(parsedData)
 
     useEffect(() => {
-        setFetchedData(aocFetch());
+        const data = aocFetch();
+        setFetchedData(data);
        console.log(fetchedData)
     }, [])
 

@@ -1,3 +1,4 @@
+import axios from "axios";
 //Fetch from AoC API
 
 //Need to provide a session cookie
@@ -8,7 +9,7 @@
 
 
 export const aocFetch = async () => {
-    const results = await fetch(`https://adventofcode.com/2022/leaderboard/private/view/2254107.json`, {
+    const results = await axios.get(`https://adventofcode.com/2022/leaderboard/private/view/2254107.json`, {
         headers: {
             "session": process.env.SESSION_ID,
         }
