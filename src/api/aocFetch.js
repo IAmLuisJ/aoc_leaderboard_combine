@@ -11,6 +11,7 @@ import axios from "axios";
 export const aocFetch = async () => {
     const results = await axios.get(`https://adventofcode.com/2022/leaderboard/private/view/2254107.json`, {
         headers: {
+            "Content-Type": "application/json",
             "session": process.env.SESSION_ID,
         }
     });
