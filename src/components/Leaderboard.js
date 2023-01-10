@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { aocFetch } from '../api/aocFetch';
-import MockData from '../testData/2254107.json';
+//import MockData from '../testData/2254107.json';
 
 const Leaderboard = () => {
-    const [fetchedData, setFetchedData] = useState();
+    const [fetchedData, setFetchedData] = useState(null);
     // const data = MockData;
     // console.log(data.members);
     // //const parsedData =null;

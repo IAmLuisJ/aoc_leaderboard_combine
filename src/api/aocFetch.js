@@ -6,7 +6,6 @@
 
 //For mock data use testData
 
-const APIURL =  "https://adventofcode.com";
 
 export const aocFetch = async () => {
     const results = await fetch(`https://adventofcode.com/2022/leaderboard/private/view/2254107.json`, {
